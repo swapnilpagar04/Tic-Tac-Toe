@@ -1,0 +1,82 @@
+* {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: rgba(0, 255, 255, 0.735);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 180px;
+  border: 2px solid rgba(251, 249, 249, 0.359);
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.box:focus,
+.box:active {
+  outline: none;
+  background-color: rgba(0, 255, 255, 0.735); /* same as default */
+  box-shadow: 0 2px 4px rgba(0, 255, 200, 0.2);
+  transform: scale(0.9);
+}
+
+
+.box p {
+  background-color: rgba(0, 255, 255, 0); /* same as default */
+  box-shadow: 0 2px 4px rgba(0, 255, 200, 0.2);
+  font-size: 100px;
+  margin: 0;
+  pointer-events: none;
+  user-select: none;
+} 
+
+.head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.win-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+button {
+  background-color: aquamarine;
+  color: black;
+  border-radius: 7px;
+  height: 40px;
+  width: 140px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+button:hover {
+  transform: scale(0.95);
+  box-shadow: 0 4px 8px rgba(0, 255, 200, 0.4);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+button:active {
+  transform: scale(0.9);
+  box-shadow: 0 2px 4px rgba(0, 255, 200, 0.2);
+}
